@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <!--my css-->
+    <link rel="stylesheet" href="style.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--font icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--navbar-section-->
+    <section class="navbar-section">
+        <nav class="navbar">
+            <h1>AGISH</h1>
+            <div class="navbar-links">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#contact">contact</a>
+                <div id="btn" class="button" onclick="opencv()">
+                    <button>Download CV</button>
+                </div>
+            </div>
+
+            <div class="navbar-toggle" onclick="shownavbar()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </section>
+
+
+    <!--sidenavbar-section-->
+    <section class="sidenavbar-section">
+        <div class="side-navbar">
+            <i class="fa-solid fa-xmark close" onclick="closenavbar()"></i>
+            <a href="#home" onclick="closenavbar()">home</a>
+            <a href="#about" onclick="closenavbar()">about</a>
+            <a href="#skills" onclick="closenavbar()">skills</a>
+            <a href="#contact" onclick="closenavbar()">contact</a>
+        </div>
+    </section>
+
+    <!--header-section-->
+
+    <section class="header-section" id="home">
+        <div class="head">
+
+            <div class="text">
+                <h5>HI there 👋🏽</h5>
+                <h1>I'M AGISH</h1>
+                <h4>software developer</h4>
+                <p>I love turning ideas into beautiful <br>
+                    and functional web applications.</p>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <img src="agish.png">
+
+        </div>
+    </section>
+
+    <!--About-section-->
+    <section class="about-section" id="about">
+        <div class="about">
+            <img src="aboutimg.png">
+
+            <div class="about-text">
+                <h1>Welcome to My Portfolio.🙋🏽</h1>
+
+                <div class="left">
+                    <div class="info">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Name: AGISH</span>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-mobile"></i>
+                        <span>contact: +94 710776394</span>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>SRILANKA</span>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Software Developer</span>
+                    </div>
+                </div>
+
+                <div id="btnz" class="buttonz" onclick="opencv()">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--skills-section-->
+
+    <section class="skills-section" id="skills">
+        <div class="skill">
+            <h1>SKILLS 🧑🏽‍💻</h1>
+            <div class="skill-img">
+                <img src="images.png">
+                <img src="download (1).jpg">
+                <img src="images.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!--contact-section-->
+
+    <section class="contact-section" id="contact">
+        <span>
+            <h1>Contact Me 📩</h1>
+        </span>
+
+        <form class="contact" action="https://formspree.io/f/mdavyrab" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button id="btnn">Send</button>
+        </form>
+    </section>
+
+    <!--footer-section-->
+
+    <section class="footer-section">
+        <div class="footer">
+            <p>© 2026 Agish. All Rights Reserved.</p>
+
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/mr__agish?igsh=bHdjd3M0YmcwZGk0"><i class='fab fa-instagram'></i></a>
+
+                <a href="https://wa.me/94710776394">
+                    <span><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+            </div>
+
+            <div class="span-tag">
+                <p>Designed & Developed by Agish ❤️</p>
+            </div>
+
+            <div class="footer-top">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i>Back to top</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--my js-->
+    <script src="script.js"></script>
+</body>
+
+</html>
